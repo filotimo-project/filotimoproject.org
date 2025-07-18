@@ -1,0 +1,14 @@
+@media screen and (min-width: 801px) {
+    #menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-items-center {
+        display: none;
+    }
+    #menu-button {
+        display: block;
+    }
+}

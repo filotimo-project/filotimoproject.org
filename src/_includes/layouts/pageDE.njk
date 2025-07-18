@@ -1,0 +1,73 @@
+---
+domain: filotimoproject.org
+titlePrefix: filotimo Project
+keywordsPrefix: filotimo, Linux
+author: filotimo Project
+
+privacyPolicyUrl: https://janbiernacik.com/de/privacy
+sourceCodeUrl: https://github.com/filotimo-project/filotimoproject.org
+---
+
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>{{ titlePrefix }} - {{ title }}</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="{{ description }}">
+        <meta name="keywords" content="{{ keywordsPrefix }} {{ keywords }}">
+        <meta name="author" content="{{ author }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script src="/assets/scripts/jquery.js"></script>
+        <script src="/assets/scripts/index.js"></script>
+        <link rel="stylesheet" href="/assets/styles/fonts.css" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/ids.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
+        <meta name="theme-color" content="#1B75D7" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#1B75D7" media="(prefers-color-scheme: dark)">
+
+        <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/media/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="{{ titlePrefix }}" />
+        <link rel="manifest" href="/assets/media/site.webmanifest" />
+
+        <link rel="alternate" hreflang="en" href="https://{{ domain }}/en{{ path }}" />
+        <link rel="alternate" hreflang="de" href="https://{{ domain }}/de{{ path }}" />
+        <link rel="alternate" hreflang="x-default" href="https://{{ domain }}/en{{ path }}" />
+        <link rel="canonical" href="https://{{ domain }}/de{{ path }}" />
+        <meta name="robots" content="index, follow">
+
+        <script type="module" src="/assets/scripts/turbo.js"></script>
+        <!-- 100% privacy-first analytics -->
+        <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <div class="navbar-items navbar-items-left">
+                    <a id="menu-button" class="navbar-link" onclick="toggleMenu();"><i class="bi bi-list"></i></a>
+                    <img alt="Startseite" src="/assets/media/banner-colorbackground.svg" height="35px" style="cursor: pointer;" onclick="window.location.href = '/de'">
+                </div>
+                <div class="navbar-items navbar-items-right">
+                    <a href="/en{{ path }}" class="navbar-link"><i class="bi bi-globe"></i></a>
+                </div>
+            </nav>
+            <div id="menu">
+                <div onclick="toggleMenu();" id="menu-closer"></div>
+                <ul id="menu-items">
+                    <li><a href="/de" class="menu-link">Startseite</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+            <a href="https://janbiernacik.com/de/privacy">Datenschutz</a>
+        </footer>
+    </body>
+</html>

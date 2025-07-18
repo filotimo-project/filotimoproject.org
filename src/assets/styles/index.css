@@ -1,0 +1,68 @@
+:root {
+    --color-background: #FFFFFF;
+    --color-background-alt: #F5F5F5;
+    --color-background-transparent: #FFFFFF80;
+    --color-accent: #1B75D7;
+    --color-accent-light: #0DA8F0;
+    --color-title-dark: #121212;
+    --color-text-dark: #303030;
+    --color-text-subtle-dark: #707070;
+    --color-title-light: #F8F8F8;
+    --color-text-light: #F8F8F8;
+    --height-navbar: 60px;
+    --padding-default: 20px;
+    --padding-small: 10px;
+    --padding-x-small: 5px;
+    --padding-large: 40px;
+    --padding-default-top: calc(var(--height-navbar) + 20px);
+    --blur-radius: 10px;
+}
+
+* {
+    text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+main {
+    padding: var(--padding-default-top) var(--padding-default) var(--padding-default) var(--padding-default);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: var(--padding-default);
+}
+
+footer a {
+    font-size: small;
+    color: var(--color-text-subtle-dark);
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, span {
+    font-family: "Inter", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-title-dark);
+}
+
+p, li, span {
+    color: var(--color-text-dark);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

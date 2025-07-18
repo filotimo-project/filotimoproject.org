@@ -1,0 +1,32 @@
+/* Navbar and Menu */
+.navbar-link {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+.navbar-items-left {
+    margin-left: var(--padding-default);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-items-left .navbar-link {
+    margin-right: var(--padding-x-small);
+}
+.navbar-items-right {
+    margin-right: var(--padding-default);
+    font-size: large;
+}
+.navbar-items-right .navbar-link {
+    margin-left: var(--padding-x-small);
+}
+.navbar-link:hover {
+    text-decoration: underline;
+}
+.menu-link {
+    color: var(--color-text-dark);
+    font-size: large;
+    text-decoration: none;
+}
+.menu-link:hover {
+    text-decoration: underline;
+}
