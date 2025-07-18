@@ -4,6 +4,7 @@
     --color-background-transparent: #FFFFFF80;
     --color-accent: #1B75D7;
     --color-accent-light: #0DA8F0;
+    --color-link: var(--color-accent);
     --color-title-dark: #121212;
     --color-text-dark: #303030;
     --color-text-subtle-dark: #707070;
@@ -27,6 +28,10 @@
     margin: 0;
     padding: 0;
     line-height: 1.5;
+}
+
+body {
+    background-color: var(--color-background);
 }
 
 main {
@@ -59,7 +64,7 @@ p, li, span {
 }
 
 a {
-    color: var(--color-accent);
+    color: var(--color-link);
     text-decoration: none;
 }
 

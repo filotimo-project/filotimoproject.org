@@ -1,3 +1,19 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #121212;
+        --color-background-alt: #252525;
+        --color-background-transparent: #12121280;
+        --color-accent: #155DAA;
+        --color-accent-light: #1B75D7;
+        --color-link: #0DA8F0;
+        --color-title-dark: #F5F5F5;
+        --color-text-dark: #CECECE;
+        --color-text-subtle-dark: #707070;
+        --color-title-light: #F8F8F8;
+        --color-text-light: #F8F8F8;
+    }
+}
+
 @media screen and (min-width: 801px) {
     #menu {
         display: none;
