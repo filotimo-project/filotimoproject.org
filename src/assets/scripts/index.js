@@ -20,9 +20,9 @@ function toggleMenu() {
 
 $(window).on("resize", function() {
     var menuOpen = $("#menu").css("visibility") === "visible";
-    if(menuOpen && $(window).width() > 800) {
+    if(menuOpen && $(window).width() > 650) {
         $("body").css({"overflow": "auto"});
-    } else if (menuOpen && $(window).width() <= 800) {
+    } else if (menuOpen && $(window).width() <= 650) {
         $("body").css({"overflow": "hidden"});
     }
 });

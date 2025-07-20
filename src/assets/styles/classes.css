@@ -10,17 +10,19 @@
     align-items: center;
 }
 .navbar-items-left .navbar-link {
-    margin-right: var(--padding-x-small);
+    margin-right: var(--padding-default);
 }
 .navbar-items-right {
     margin-right: var(--padding-default);
-    font-size: large;
 }
 .navbar-items-right .navbar-link {
-    margin-left: var(--padding-x-small);
+    margin-left: var(--padding-default);
 }
 .navbar-link:hover {
     text-decoration: underline;
+}
+.navbar-button {
+    font-size: large;
 }
 .menu-link {
     color: var(--color-text-dark);
@@ -29,4 +31,35 @@
 }
 .menu-link:hover {
     text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border: 8px solid var(--color-accent);
+    border-radius: 4px;
+    line-height: 3em;
+    transition: all .1s;
+}
+.button:hover {
+    background-color: var(--color-accent-light);
+    border: 8px solid var(--color-accent-light);
+    text-decoration: none;
+}
+
+/* Main DIVs */
+.section {
+    padding: var(--padding-default) 0;
+    margin: var(--padding-default) 0;
+}
+.center-h {
+    width: 100%;
+    text-align: center;
+}
+.inline-button-wrap {
+    width: 100%;
+}
+.inline-button-wrap a {
+    margin: 0 var(--padding-small);
 }

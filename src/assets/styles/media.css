@@ -3,25 +3,28 @@
         --color-background: #121212;
         --color-background-alt: #252525;
         --color-background-transparent: #12121280;
-        --color-accent: #155DAA;
-        --color-accent-light: #1B75D7;
-        --color-link: #0DA8F0;
-        --color-title-dark: #F5F5F5;
+        --color-accent: #075bb4;
+        --color-accent-light: #1170BE;
+        --color-link: #3999e6;
+        --color-title-dark: #FAFAFA;
         --color-text-dark: #CECECE;
         --color-text-subtle-dark: #707070;
         --color-title-light: #F8F8F8;
         --color-text-light: #F8F8F8;
     }
+    .section img {
+        filter: brightness(.95);
+    }
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 651px) {
     #menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 800px) {
-    .navbar-items-center {
+@media screen and (max-width: 650px) {
+    .navbar-link-desktop {
         display: none;
     }
     #menu-button {

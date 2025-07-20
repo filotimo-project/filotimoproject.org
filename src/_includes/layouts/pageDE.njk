@@ -25,8 +25,8 @@ sourceCodeUrl: https://github.com/filotimo-project/filotimoproject.org
         <link rel="stylesheet" href="/assets/styles/classes.css" />
         <link rel="stylesheet" href="/assets/styles/ids.css" />
         <link rel="stylesheet" href="/assets/styles/media.css" />
-        <meta name="theme-color" content="#1B75D7" media="(prefers-color-scheme: light)">
-        <meta name="theme-color" content="#155DAA" media="(prefers-color-scheme: dark)">
+        <meta name="theme-color" content="#1170BE" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#075bb4" media="(prefers-color-scheme: dark)">
 
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
@@ -48,18 +48,25 @@ sourceCodeUrl: https://github.com/filotimo-project/filotimoproject.org
     <body>
         <header>
             <nav id="navbar">
-                <div class="navbar-items navbar-items-left">
-                    <a id="menu-button" class="navbar-link" onclick="toggleMenu();"><i class="bi bi-list"></i></a>
-                    <img alt="Startseite" src="/assets/media/banner-colorbackground.svg" height="35px" style="cursor: pointer;" onclick="window.location.href = '/de'">
-                </div>
-                <div class="navbar-items navbar-items-right">
-                    <a href="/en{{ path }}" class="navbar-link"><i class="bi bi-globe"></i></a>
+                <div id="navbar-content-wrapper">
+                    <div class="navbar-items navbar-items-left">
+                        <a id="menu-button" class="navbar-link" onclick="toggleMenu();"><i class="bi bi-list"></i></a>
+                        <img class="navbar-link" alt="Startseite" src="/assets/media/banner-colorbackground.svg" height="50px" style="cursor: pointer;" onclick="window.location.href = '/de'">
+                    </div>
+                    <div class="navbar-items navbar-items-right">
+                        <a class="navbar-link navbar-link-desktop" href="/de">Startseite</a>
+                        <a class="navbar-link navbar-link-desktop" href="/de/download">Herunterladen</a>
+                        <a class="navbar-link navbar-link-desktop" href="/de/contribute">Mitmachen</a>
+                        <a href="/en{{ path }}" class="navbar-link navbar-button"><i class="bi bi-globe"></i></a>
+                    </div>
                 </div>
             </nav>
             <div id="menu">
                 <div onclick="toggleMenu();" id="menu-closer"></div>
                 <ul id="menu-items">
                     <li><a href="/de" class="menu-link">Startseite</a></li>
+                    <li><a href="/de/download" class="menu-link">Herunterladen</a></li>
+                    <li><a href="/de/contribute" class="menu-link">Mitmachen</a></li>
                 </ul>
             </div>
         </header>

@@ -1,22 +1,24 @@
 :root {
     --color-background: #FFFFFF;
     --color-background-alt: #F5F5F5;
-    --color-background-transparent: #FFFFFF80;
-    --color-accent: #1B75D7;
-    --color-accent-light: #0DA8F0;
+    --color-background-transparent: #FFFFFF99;
+    --color-accent: #1170BE;
+    --color-accent-light: #3999e6;
     --color-link: var(--color-accent);
     --color-title-dark: #121212;
     --color-text-dark: #303030;
     --color-text-subtle-dark: #707070;
     --color-title-light: #F8F8F8;
     --color-text-light: #F8F8F8;
-    --height-navbar: 60px;
+    --height-navbar: 80px;
+    --width-page: 1100px;
     --padding-default: 20px;
     --padding-small: 10px;
     --padding-x-small: 5px;
     --padding-large: 40px;
     --padding-default-top: calc(var(--height-navbar) + 20px);
-    --blur-radius: 10px;
+    --radius-blur: 10px;
+    --radius-corner: 4px;
 }
 
 * {
@@ -36,7 +38,7 @@ body {
 
 main {
     padding: var(--padding-default-top) var(--padding-default) var(--padding-default) var(--padding-default);
-    max-width: 1200px;
+    max-width: var(--width-page);
     margin: 0 auto;
 }
 
@@ -51,12 +53,14 @@ footer a {
     color: var(--color-text-subtle-dark);
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, span {
+p, a, li, span {
     font-family: "Inter", "Arial", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-title-dark);
+    font-family: "Manrope", "Arial", sans-serif;
+    font-weight: 400;
 }
 
 p, li, span {
