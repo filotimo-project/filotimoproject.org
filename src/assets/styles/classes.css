@@ -50,8 +50,14 @@
 
 /* Main DIVs */
 .section {
+    padding: var(--padding-default);
+    max-width: var(--width-page);
+    margin: var(--padding-default) auto;
+}
+
+.section-alt-wrap {
+    background-color: var(--color-background-alt);
     padding: var(--padding-default) 0;
-    margin: var(--padding-default) 0;
 }
 .center-h {
     width: 100%;
@@ -62,4 +68,18 @@
 }
 .inline-button-wrap a {
     margin: 0 var(--padding-small);
+}
+
+/* Titles */
+.center-title {
+    text-align: center;
+    padding-bottom: var(--padding-small);
+    margin-bottom: var(--padding-default);
+    border-bottom: 1px solid var(--color-text-dark);
+}
+
+/* Misc */
+.contributor-image {
+    border-radius: 50%;
+    cursor: pointer;
 }

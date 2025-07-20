@@ -37,9 +37,7 @@ body {
 }
 
 main {
-    padding: var(--padding-default-top) var(--padding-default) var(--padding-default) var(--padding-default);
-    max-width: var(--width-page);
-    margin: 0 auto;
+    padding: var(--padding-default-top) 0 var(--padding-default) 0;
 }
 
 footer {
@@ -55,12 +53,14 @@ footer a {
 
 p, a, li, span {
     font-family: "Inter", "Arial", sans-serif;
+    margin-bottom: var(--padding-x-small);
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-title-dark);
     font-family: "Manrope", "Arial", sans-serif;
     font-weight: 400;
+    margin-bottom: var(--padding-small);
 }
 
 p, li, span {
